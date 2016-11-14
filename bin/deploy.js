@@ -12,7 +12,7 @@ const registry = now.deployment(process.env.NOW_TOKEN)
   })
   .on('ready', () => {
     console.log('Deployment ready, aliasing...')
-    registry.alias(process.env.REGISTRY_HOST_UI)
+    registry.alias(process.env.REGISTRY_UI_HOST)
   })
   .on('aliased', () => {
     console.log('Alias successful!')
